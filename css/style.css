@@ -302,3 +302,49 @@ template {
  */
 [hidden] {
   display: none; }
+
+:root {
+  --color-primary: #eb2f64;
+  --color-PrimaryLight: #FF3366;
+  --color-PrimaryDark: #BA265D;
+  --color-GreyLight1: #faf9f9;
+  --color-GreyLight2: #f4f2f2;
+  --color-GreyLight3: #f0eeee;
+  --color-GreyLight4: #ccc;
+  --color-GreyDark1: #333;
+  --color-GreyDark2: #777;
+  --color-GreyDark3: #999; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-GreyDark2);
+  background-image: linear-gradient(to right bottom, var(--color-PrimaryLight), var(--color-PrimaryDark));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-GreyLight1);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  min-height: 50rem; }
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--color-GreyLight2); }
+
+.sidebar {
+  background-color: var(--color-GreyDark1); }
