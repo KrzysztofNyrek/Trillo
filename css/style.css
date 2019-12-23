@@ -416,6 +416,12 @@ body {
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem; }
+  .side-nav__link:visited {
+    color: var(--color-GreyLight1);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem 3rem; }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem; }
