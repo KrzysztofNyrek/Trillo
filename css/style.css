@@ -541,7 +541,7 @@ body {
   max-width: 120rem;
   margin: 8rem auto;
   background-color: var(--color-GreyLight1);
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-dark);
   min-height: 50rem; }
 
 .header {
@@ -579,7 +579,9 @@ body {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 60%;
-  margin-right: 4.5rem; }
+  margin-right: 4.5rem;
+  background-color: #fff;
+  box-shadow: var(--shadow-light); }
 
 .user-reviews {
   flex: 1; }
