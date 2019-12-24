@@ -347,3 +347,18 @@ template {
 [hidden] {
   display: none;
 }
+//Based on chrome agent user stylesheet reset
+figure{
+  margin:0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+blockquote {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
