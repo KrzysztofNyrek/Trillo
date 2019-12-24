@@ -581,7 +581,8 @@ body {
   flex-basis: 60%;
   margin-right: 4.5rem;
   background-color: #fff;
-  box-shadow: var(--shadow-light); }
+  box-shadow: var(--shadow-light);
+  font-size: 1.4rem; }
 
 .user-reviews {
   flex: 1; }
