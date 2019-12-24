@@ -10,6 +10,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media only screen and (max-width: $bp-smallest){
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-GreyLight2);
+  }
 
   &__input{
     font-family: inherit;
@@ -62,6 +67,9 @@
     height: -webkit-fill-available;
     display: flex;
     align-items: center;
+    @media only screen and (max-width: $bp-smallest){
+      height: 100%;
+    }
   }
   & > *:hover{
     background-color: var(--color-GreyLight2);
@@ -87,6 +95,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: $bp-smallest){
+      top: -.5rem;
+    }
   }
 
   &__user-photo{
