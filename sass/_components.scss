@@ -101,12 +101,24 @@
   list-style: none;
   margin-top: 3.5rem;
   padding: 0;
+  
+  @media only screen and (max-width: $bp-medium){
+    display: flex;
+    margin: 0;
+  }
+ 
 
   &__item {
     position: relative;
 
     &:not(:last-child){
       margin-bottom: .5rem;
+      @media only screen and (max-width: $bp-medium){
+        margin: 0;
+      }
+    }
+    @media only screen and (max-width: $bp-medium){
+      flex: 1;
     }
   }
   &__item::before{
@@ -141,6 +153,10 @@
     align-items: center;
     position: relative;
     z-index: 1;
+    @media only screen and (max-width: $bp-medium){
+      justify-content: center;
+      padding: 2rem;
+    }
   }
   &__icon{
     width: 1.75rem;
@@ -155,6 +171,9 @@
   color: var(--color-GreyLight4);
   text-align: center;
   padding: 2.5rem;
+  @media only screen and (max-width: $bp-medium){
+    display: none;
+  }
 }
 
 .gallery{
@@ -312,7 +331,9 @@
   &__count{
     margin-right: auto;
   }
-
+  &__friends{
+    display: flex;
+  }
   &__photo{
     box-sizing: content-box;
     height: 4rem;
@@ -321,7 +342,7 @@
     border: 3px solid #fff;
 
     &:not(:last-child){
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }
@@ -333,6 +354,10 @@
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
+  @media only screen and (max-width: $bp-medium){
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
 
   &__text{
     margin-bottom: 2rem;
@@ -391,6 +416,9 @@
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
+  }
+  @media only screen and (max-width: $bp-medium){
+    padding: 2.5rem 0;
   }
 }
 .btn{
